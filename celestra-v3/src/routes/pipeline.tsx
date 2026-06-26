@@ -108,7 +108,7 @@ function PipelinePage() {
       setMessages([{
         id: crypto.randomUUID(),
         role: "assistant",
-        content: `Failed to connect to backend: ${(err as Error).message}\n\nMake sure the Flask server is running at http://localhost:5000`,
+        content: `Failed to connect to backend: ${(err as Error).message}\n\nMake sure the Flask server is running at http://localhost:5000 please do this`,
       }]);
     } finally {
       setIsLoading(false);
